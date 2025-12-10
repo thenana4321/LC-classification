@@ -1,0 +1,2 @@
+C:/Users/voelsen/Daten1/Programming/landcover_classification/Land-Cover-Classification/code/main.py
+Timestamp: 2025-12-03 12:03:24

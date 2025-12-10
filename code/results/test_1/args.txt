@@ -1,0 +1,68 @@
+name: test_1
+resu: ./results/
+mode: train
+cuda: 0
+sat_im_size: 1024
+list_train: train
+list_val: val
+list_test: test
+nbbd: 4
+nbcl: 6
+cls_file: ../config_files/classes_Planet.csv
+soti: ['2018-01-01', '2019-12-31']
+ignidx: 6
+save_all_timesteps: False
+nbts: 12
+insz: 256
+modl: swin_mt
+deco: upernet
+patch_emb: conv3d
+nb_CB_PE: 2
+pe_skip: False
+ptsz: 4
+tdim: 48
+swdp: [2, 2]
+swhd: [3, 6]
+swin: 7
+tmlp: 4
+swdc: 512
+use_te: True
+tau: 10000
+ST_light: True
+ST_light_conv: c
+temp_skip: False
+drop_rate: 0.0
+attn_drop_rate: 0.4
+drop_path_rate: 0.2
+dropout_ratio: 0.1
+conv_activation: leakyrelu
+kernel_size: 3
+type_init: default
+ep_to_val: 30
+nepo: 100
+impe: 2000
+btsz: 2
+nbwo: 64
+mets: periods_random
+loss: CrEn
+uswe: True
+kowe: ioua
+acep: 1
+nb_batches_iou: 100
+optm: ADAM
+lrin: 6e-05
+lrfa: 0.7
+bta1: 0.9
+bta2: 0.999
+wdec: 0
+onau: flip
+fff: 1
+dast: D:/Mirjana.Voelsen/Daten 2/Sentinel/DynamicEarthNet/storage_dyn_earth_net/
+cols: {1: [np.int64(96), np.int64(96), np.int64(96)], 2: [np.int64(204), np.int64(204), np.int64(0)], 3: [np.int64(0), np.int64(204), np.int64(0)], 4: [np.int64(0), np.int64(0), np.int64(153)], 5: [np.int64(153), np.int64(76), np.int64(0)], 6: [np.int64(0), np.int64(128), np.int64(255)]}
+cls_names: ['impervious_surface' 'agriculture' 'forest_and_other_vegetation'
+ 'wetlands' 'soil' 'water']
+t_mid: ['0115', '0215', '0315', '0415', '0515', '0615', '0715', '0815', '0915', '1015', '1115', '1215']
+t_begin: ['0101', '0201', '0301', '0401', '0501', '0601', '0701', '0801', '0901', '1001', '1101', '1201']
+t_end: ['0131', '0228', '0331', '0430', '0531', '0630', '0731', '0831', '0930', '1031', '1130', '1231']
+nb_parameters_net: 22839126
+nb_varaibles_net: 153

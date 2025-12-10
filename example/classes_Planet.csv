@@ -1,0 +1,7 @@
+Class_ID,Class_Name,rot,grün,blau
+1,impervious_surface,96,96,96
+2,agriculture,204,204,0
+3,forest_and_other_vegetation,0,204,0
+4,wetlands,0,0,153
+5,soil,153,76,0
+6,water,0,128,255

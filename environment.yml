@@ -1,0 +1,20 @@
+name: env_lc
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.12
+  - pip
+  - pandas
+  - matplotlib
+  - rasterio
+  - tqdm
+  - timm
+
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu118
+      - torch==2.7.1
+      - torchvision==0.22.1
+      - torchaudio==2.7.1
+      - torchmetrics
